@@ -37,4 +37,8 @@ app.get('/', function(request, response, next){
 
 }); 
 
+app.post('/', function(request, response, next){
+    response.send(request.body);
+});
+
 app.listen(2000);
